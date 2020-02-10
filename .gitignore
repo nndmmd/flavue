@@ -1,0 +1,7 @@
+__pycache__/
+app/__pycache__/
+app/api/__pycache__/
+.vs
+venv/
+app.db
+flavue.log*
