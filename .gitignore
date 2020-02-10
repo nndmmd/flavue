@@ -1,9 +1,19 @@
+# Python cache & venv
 __pycache__/
 app/__pycache__/
 app/api/__pycache__/
-.vs
-flavue.pyproj
-flavue.sln
 venv/
+
+# Editor directories and files
+.vs
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.pyproj
+*.sln
+
+# App other files
 app.db
 flavue.log*
