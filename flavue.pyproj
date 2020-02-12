@@ -19,8 +19,17 @@
     <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="back-end\app\api\errors.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="back-end\app\api\ping.py" />
+    <Compile Include="back-end\app\api\users.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="back-end\app\api\__init__.py" />
+    <Compile Include="back-end\app\models.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="back-end\app\__init__.py" />
     <Compile Include="back-end\config.py" />
     <Compile Include="back-end\flavue.py" />
@@ -4481,6 +4490,7 @@
   <ItemGroup>
     <Content Include=".gitignore" />
     <Content Include="back-end\.env" />
+    <Content Include="back-end\requirements.txt" />
     <Content Include="front-end\.babelrc" />
     <Content Include="front-end\.editorconfig" />
     <Content Include="front-end\.gitignore" />
