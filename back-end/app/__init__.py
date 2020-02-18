@@ -27,3 +27,4 @@ def create_app(config_class=Config):
     return app
 
 from app import models
+from app.api import ping, users, tokens

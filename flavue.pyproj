@@ -19,10 +19,16 @@
     <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="back-end\app\api\auth.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="back-end\app\api\errors.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="back-end\app\api\ping.py" />
+    <Compile Include="back-end\app\api\tokens.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="back-end\app\api\users.py">
       <SubType>Code</SubType>
     </Compile>

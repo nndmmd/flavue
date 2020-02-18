@@ -1,5 +1,6 @@
 from werkzeug.security import generate_password_hash, check_password_hash
 from app import db
+from flask import url_for
 
 class PaginatedAPIMixin(object):
     @staticmethod
@@ -51,10 +52,10 @@ class User(PaginatedAPIMixin,db.Model):
             data['email'] = self.email
         return data
 
-def from_dict(self, data, new_user=False):
-    for field in ['username', 'email']:
-        if field in data:
-            setattr(self, field, data[field])
-    if new_user and 'password' in data:
-        self.set_password(data['password'])
+    def from_dict(self, data, new_user=False):
+        for field in ['username', 'email']:
+            if field in data:
+                setattr(self, field, data[field])
+        if new_user and 'password' in data:
+            self.set_password(data['password'])
 

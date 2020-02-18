@@ -2,7 +2,7 @@ import re
 from flask import request, jsonify, url_for
 from app import db
 from app.api import bp
-from app.api.auth import token_auth
+#from app.api.auth import token_auth
 from app.api.errors import bad_request
 from app.models import User
 
@@ -47,12 +47,10 @@ def get_users():
     data = User.to_collection_dict(User.query, page, per_page, 'api.get_users')
     return jsonify(data)
 
-
 @bp.route('/users/<int:id>', methods=['GET'])
 def get_user(id):
     '''返回一个用户'''
-    pass
-
+    return jsonify(User.query.get_or_404(id).to_dict())
 
 @bp.route('/users/<int:id>', methods=['PUT'])
 def update_user(id):
@@ -89,3 +87,4 @@ def update_user(id):
 def delete_user(id):
     '''删除一个用户'''
     pass
+
