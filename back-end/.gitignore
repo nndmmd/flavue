@@ -3,3 +3,7 @@ __pycache__/
 app/__pycache__/
 app/api/__pycache__/
 venv/
+
+# App other files
+app.db
+flavue.log*
