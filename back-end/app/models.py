@@ -58,4 +58,3 @@ class User(PaginatedAPIMixin,db.Model):
                 setattr(self, field, data[field])
         if new_user and 'password' in data:
             self.set_password(data['password'])
-
