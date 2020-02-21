@@ -1,0 +1,9 @@
+{
+  "name": "flavue",
+  "version": "0.0.0",
+  "description": "flavue",
+  "main": "server.js",
+  "author": {
+    "name": ""
+  }
+}
